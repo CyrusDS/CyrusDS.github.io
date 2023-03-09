@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html color-mode="light">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <title>My Portfolio Website</title>
     <link rel="stylesheet" href="app.css">
   </head>
@@ -13,21 +17,27 @@
       background-size: cover;
     }
     </style>
-    <header>
+    <header id="D1" style="background:#333;">
       <nav>
         <ul>    
             <li>  <div></div> <div></div> <div></div></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="hobbies.html">Personal Hobbies</a></li>
+          <li><a class ="h_button" href="index.html">Home</a></li>
+          <li><a class ="h_button" href="about.html">About Me</a></li>
+          <li><a class ="h_button" href="hobbies.html">Personal Hobbies</a></li>
         </ul>
       </nav>
     </header>
-    
     <main>
       <section>
+        <h2 id="floating-buttons">
+            <a href="https://www.facebook.com"><button class="circular-button"><i class="fa fa-facebook"></i></button></a>
+            <a href="https://www.twitter.com"><button class="circular-button"><i class="fa fa-github"></i></button></a>
+            <a href="https://www.instagram.com"><button class="circular-button"><i class="fa fa-instagram"></i></button></a>
+            <a href="https://www.linkedin.com"><button class="circular-button"><i class="fa fa-linkedin"></i></button></a>
+        </h2>
+        <h1>\</h1>
         <h1>Welcome to My Portfolio</h1>
-        <p>Here you will find my work as a Senior student in Electrical and Computer Engineering.</p>
+        <p>Here you will find my work as a Senior student in Electrical and Computer Engineering, as well as my adventures in HTML.</p>
         <p>The background-image is fixed. Try to scroll down the page.</p>
         <p>The background-image is fixed. Try to scroll down the page.</p>
         <p>The background-image is fixed. Try to scroll down the page.</p>
@@ -100,8 +110,12 @@
       </section>
     </main>
     
-    <footer>
+    <footer id ="D2" style="background:#333;">
+      <script src="app.js"></script>
+      <p>Click the button to toggle between dark and light mode for this page. Don't be a menace. (You'll regret it)</p>
+      <button class ="button" onclick="myDarkmode()">Toggle Dark Mode</button>
       <p>&copy; 2023 My Portfolio Website</p>
+      <a href="index.html">Github</a>
     </footer>
   </body>
 </html>
